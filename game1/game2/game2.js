@@ -26,9 +26,9 @@ const replayGame = () => {
         paper.classList.remove("hide");
         rock.classList.remove("hide");
         scissor.classList.remove("hide");
-        rock.innerHTML = `<img src='rock.png' alt='rock image'>`;
-        paper.innerHTML = `<img src='paper.png' alt='paper image'>`;
-        scissor.innerHTML = `<img src='scissors.png' alt='scissor image'>`;
+        rock.innerHTML = `<img src='rock.webp' alt='rock image'>`;
+        paper.innerHTML = `<img src='paper.webp' alt='paper image'>`;
+        scissor.innerHTML = `<img src='scissors.webp' alt='scissor image'>`;
         msg.style.backgroundColor = "#081b31";
         replay.classList.add("hide");
     });
@@ -95,8 +95,8 @@ const playGame = (userchoice) => {
         scissor.classList.add("hide");
         paper.classList.add("rotate");
         rock.classList.add("rotate");
-        rock.innerHTML = "<img src='paper.png' alt='paper image'>";
-        paper.innerHTML = "<img src='rock.png' alt='rock image'>";
+        rock.innerHTML = "<img src='paper.webp' alt='paper image'>";
+        paper.innerHTML = "<img src='rock.webp' alt='rock image'>";
     }
     else if(userchoice === "paper" && compChoice === "scissor"){
         rock.classList.add("hide");
@@ -107,15 +107,15 @@ const playGame = (userchoice) => {
         paper.classList.add("hide");
         rock.classList.add("rotate");
         scissor.classList.add("rotate");
-        scissor.innerHTML = `<img src="rock.png" alt="rock image">`;
-        rock.innerHTML = `<img src="scissors.png" alt="scissor image">`;
+        scissor.innerHTML = `<img src="rock.webp" alt="rock image">`;
+        rock.innerHTML = `<img src="scissors.webp" alt="scissor image">`;
     }
     else if(userchoice === "scissor" && compChoice === "paper"){
         rock.classList.add("hide");
         scissor.classList.add("rotate");
         paper.classList.add("rotate");
-        scissor.innerHTML = `<img src='paper.png' alt='paper image'>`;
-        paper.innerHTML = `<img src="scissors.png" alt="scissor image">`;       
+        scissor.innerHTML = `<img src='paper.webp' alt='paper image'>`;
+        paper.innerHTML = `<img src="scissors.webp" alt="scissor image">`;       
     }
 
     if(userchoice === compChoice){
